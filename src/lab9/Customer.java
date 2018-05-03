@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package chapter9;
+package lab9;
 
 /**
  *
@@ -13,8 +13,8 @@ public class Customer extends Person{
     int customerNumber;
     boolean mailingList;
 
-    public Customer(int customerNumber, boolean mailingList, String name, String address, String telephone) {
-        super(name, address, telephone);
+    public Customer(int customerNumber, boolean mailingList, String name, String address, String phone) {
+        super(name, address, phone);
         this.customerNumber = customerNumber;
         this.mailingList = mailingList;
     }

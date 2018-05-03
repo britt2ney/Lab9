@@ -1,8 +1,14 @@
+package lab9;
+
+
+import lab9.Customer;
+
 public class PreferredCustomer extends Customer {
     private double spent;
     private double discount;
-    public PreferredCustomer(boolean mailing,int customernum,String name,String address,int phone){
-       super(mailing,customernum,name,address,phone);
+    
+    public PreferredCustomer(int customerNumber,boolean mailingList,String name,String address,String phone){
+       super(customerNumber,mailingList,name,address,phone);
     }
 
     public double getSpent() {
