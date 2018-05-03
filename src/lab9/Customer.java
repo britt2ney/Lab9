@@ -3,12 +3,42 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab9;
+package chapter9;
 
 /**
  *
- * @author bschultz43
+ * @author jenders1
  */
-public class Customer extends Person {
+public class Customer extends Person{
+    int customerNumber;
+    boolean mailingList;
+
+    public Customer(int customerNumber, boolean mailingList, String name, String address, String telephone) {
+        super(name, address, telephone);
+        this.customerNumber = customerNumber;
+        this.mailingList = mailingList;
+    }
+
+    public int getCustomerNumber() {
+        return customerNumber;
+    }
+
+    public boolean isMailingList() {
+        return mailingList;
+    }
+
+    public void setCustomerNumber(int customerNumber) {
+        this.customerNumber = customerNumber;
+    }
+
+    public void setMailingList(boolean mailingList) {
+        this.mailingList = mailingList;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer Number #" + customerNumber + " is on mailing list (" + mailingList + ")";
+    }
+    
     
 }
