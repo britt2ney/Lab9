@@ -15,7 +15,11 @@ public class Lab9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Person p = new Person("Brittney Schultz", "Not provided", "123-456-7890");
+        
+        System.out.println(p);
+        
+        
     }
     
 }
